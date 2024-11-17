@@ -1,0 +1,179 @@
+:root {
+    --primary-blue: #2563eb;
+    --primary-red: #dc2626;
+    --primary-green: #16a34a;
+    --primary-yellow: #ca8a04;
+    --background-gray: #f3f4f6;
+    --white: #ffffff;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--background-gray);
+}
+
+.navbar {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--text-light);
+}
+
+.main-content {
+    max-width: 1280px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.dashboard-container {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+}
+
+h1 {
+    color: var(--text-dark);
+    font-size: 1.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.status-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.status-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.card-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.battery {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-blue);
+}
+
+.temperature {
+    background-color: rgba(220, 38, 38, 0.1);
+    color: var(--primary-red);
+}
+
+.performance {
+    background-color: rgba(22, 163, 74, 0.1);
+    color: var(--primary-green);
+}
+
+.maintenance {
+    background-color: rgba(202, 138, 4, 0.1);
+    color: var(--primary-yellow);
+}
+
+.tab-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab-btn.active {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.tab-btn:not(.active) {
+    background-color: var(--background-gray);
+    color: var(--text-light);
+}
+
+.charts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.chart-wrapper {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    height: 300px;
+}
+
+.chart-wrapper h3 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .status-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .card-header {
+        font-size: 1rem;
+    }
+    
+    .card-value {
+        font-size: 1.25rem;
+    }
+}
