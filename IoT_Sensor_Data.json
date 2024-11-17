@@ -1,0 +1,120 @@
+{
+    "vehicles": [
+        {
+            "id": "VW-ID3-001",
+            "model": "ID.3",
+            "battery_health": 92,
+            "temperature": {
+                "ambient": 24,
+                "battery": 30
+            },
+            "performance_metrics": {
+                "mileage": 320,
+                "energy_consumption": 14.5
+            },
+            "alerts": [
+                {
+                    "type": "predictive_maintenance",
+                    "component": "brake_system",
+                    "issue": "Early wear detected",
+                    "recommendation": "Inspect brake pads within 500 km"
+                },
+                {
+                    "type": "self_healing",
+                    "component": "infotainment",
+                    "issue": "Software glitch",
+                    "action_taken": "OTA update applied successfully"
+                }
+            ]
+        },
+        {
+            "id": "VW-ID4-002",
+            "model": "ID.4",
+            "battery_health": 88,
+            "temperature": {
+                "ambient": 28,
+                "battery": 35
+            },
+            "performance_metrics": {
+                "mileage": 400,
+                "energy_consumption": 16.2
+            },
+            "alerts": [
+                {
+                    "type": "predictive_maintenance",
+                    "component": "battery_cooling_system",
+                    "issue": "Cooling efficiency dropped by 15%",
+                    "recommendation": "Schedule coolant refill within 7 days"
+                },
+                {
+                    "type": "self_healing",
+                    "component": "navigation_system",
+                    "issue": "Routing error detected",
+                    "action_taken": "System rebooted and recalibrated"
+                }
+            ]
+        },
+        {
+            "id": "VW-IDBuzz-003",
+            "model": "ID. Buzz",
+            "battery_health": 95,
+            "temperature": {
+                "ambient": 22,
+                "battery": 28
+            },
+            "performance_metrics": {
+                "mileage": 280,
+                "energy_consumption": 18.0
+            },
+            "alerts": [
+                {
+                    "type": "predictive_maintenance",
+                    "component": "suspension",
+                    "issue": "Increased wear detected",
+                    "recommendation": "Inspect suspension within 1,000 km"
+                },
+                {
+                    "type": "self_healing",
+                    "component": "OTA_updates",
+                    "issue": "Firmware mismatch",
+                    "action_taken": "Correct firmware version applied"
+                }
+            ]
+        }
+    ],
+    "maintenance_logs": [
+        {
+            "vehicle_id": "VW-ID3-001",
+            "service_date": "2024-10-01",
+            "issues_resolved": [
+                "Brake system wear",
+                "Infotainment software glitch"
+            ],
+            "cost_saved": 150
+        },
+        {
+            "vehicle_id": "VW-ID4-002",
+            "service_date": "2024-09-28",
+            "issues_resolved": [
+                "Battery cooling inefficiency",
+                "Navigation system recalibration"
+            ],
+            "cost_saved": 200
+        },
+        {
+            "vehicle_id": "VW-IDBuzz-003",
+            "service_date": "2024-10-05",
+            "issues_resolved": [
+                "Suspension wear",
+                "Firmware update mismatch"
+            ],
+            "cost_saved": 180
+        }
+    ],
+    "system_metrics": {
+        "average_downtime_reduction": 35,
+        "accuracy_of_fault_detection": 92,
+        "maintenance_cost_savings_percentage": 28,
+        "ota_updates_applied": 125
+    }
+}
